@@ -10,7 +10,7 @@ Welcome to sales's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-
+   QUICKSTART
 
 Indices and tables
 ==================
