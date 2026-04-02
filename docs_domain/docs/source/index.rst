@@ -11,6 +11,7 @@ Welcome to sales's documentation!
    :caption: Contents:
 
    QUICKSTART
+   USAGE
 
 Indices and tables
 ==================
