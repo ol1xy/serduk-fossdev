@@ -12,6 +12,7 @@ Welcome to sales's documentation!
 
    QUICKSTART
    USAGE
+   api/modules
 
 Indices and tables
 ==================
