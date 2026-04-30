@@ -3,6 +3,7 @@ create-structure:
 	touch README.md setup.py requirements.txt
 	touch docs/DOMAIN.md
 	touch src/.gitkeep tests/.gitkeep
+	touch docs/SPECIFICATION.md
 
 install-dep:
 	pip install -r requirements.txt
