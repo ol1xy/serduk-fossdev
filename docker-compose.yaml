@@ -1,4 +1,4 @@
-service:
+services:
   product-service:
     build: ./product_service
     ports:
@@ -13,7 +13,7 @@ service:
     environment:
       PRODUCT_SERVICE_URL: http://product_service:8000
     depends_on:
-      - product_service
+      - product-service
     networks:
       - service-net
 
