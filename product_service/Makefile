@@ -23,10 +23,10 @@ test-pytest:
 
 run-product:
 	@echo "Starting Product Service on port $(PORT)..."
-	poetry run uvicorn $(APP_MODULE) --host $(HOST) --port $(PORT)
+	poetry run uvicorn $(APP_MODULE) --host $(HOST) --port $(PORT) &
 
 run-order:
 	@echo "Starting Product Service on port $(PORT)..."
-	PRODUCT_SERVICE_URL=http://$(HOST):$(PORT) poetry run uvicorn $(APP_MODULE) --host $(HOST) --port 8002
+	PRODUCT_SERVICE_URL=http://$(HOST):$(PORT) poetry run uvicorn $(APP_MODULE) --host $(HOST) --port 8002 &
 
 run-services: run-product run-order
