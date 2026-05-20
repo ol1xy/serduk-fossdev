@@ -1,5 +1,6 @@
 from script import sum
 from script import divide
+from script import substruct
 def test_sum():
     a = 1
     b = 2
@@ -20,6 +21,13 @@ def test_divide_prohibited():
         print('Test string-division fails')
 #def test_divide_zero():
 #need to end it
+
+def test_subctruct():
+    a = 5
+    b = 3
+    result = 2
+    assert substruct(a, b) == result
+    print("Test substruct passed")
 
 if __name__ == '__main__':
     test_divide()

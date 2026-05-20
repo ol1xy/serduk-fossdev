@@ -13,5 +13,8 @@ def divide(a, b):
     return a / b
 
 def substruct(a, b):
-    result = a.replace(b, "")
-    retrun result
+    if isinstance(a, str) and isinstance(b, str):
+        result = a.replace(b, "")
+    else:
+        result = a - b
+    return result
